@@ -13,6 +13,21 @@ package sorts;
 public class Sorts {
     public Sorts() { } 
     
+    public static void bubble(int array[],int n){
+        int swap;
+        swap = 0;
+        for (int c = 0; c < ( n - 1 ); c++) {
+          for (int d = 0; d < n - c - 1; d++) {
+            if (array[d] > array[d+1]) /* For descending order use < */
+            {
+              swap       = array[d];
+              array[d]   = array[d+1];
+              array[d+1] = swap;
+            }
+      }
+    }
+    }
+    
     public static void swap(int data[],int i, int j){
         int temp;
         temp = data[i];
